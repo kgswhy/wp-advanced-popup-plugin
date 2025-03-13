@@ -68,7 +68,7 @@ wp-advanced-popup-plugin/
 Setelah plugin diaktifkan, Anda dapat menggunakannya di dalam WordPress. **Popup akan muncul secara otomatis sesuai dengan halaman yang ditargetkan dan akan menghilang setelah 2 detik.**
 
 ## 🎥 Demo Popup
-[![Demo Video](https://img.youtube.com/vi/A5FPuRclXYI/0.jpg)](https://youtu.be/A5FPuRclXYI)
+![Demo Video](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3FhM2Q2YmZ5ZGw0ZTlhYjVxdHE3N2J1M2d1cDAyN2Q0cmE4NGsyMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/myRMCsioSvgJw4XEnW/giphy.gif)
 
 
 
