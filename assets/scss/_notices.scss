@@ -1,0 +1,18 @@
+.notice {
+    padding: $spacing-medium;
+    margin-bottom: $spacing-large;
+    border-radius: $border-radius;
+    font-size: $font-size-base;
+
+    &-success {
+        background-color: lighten($success-color, 50%);
+        border-left: 4px solid $success-color;
+        color: darken($success-color, 10%);
+    }
+
+    &-error {
+        background-color: lighten($error-color, 40%);
+        border-left: 4px solid $error-color;
+        color: darken($error-color, 10%);
+    }
+}

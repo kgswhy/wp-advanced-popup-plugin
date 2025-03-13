@@ -1,0 +1,53 @@
+.popup-form {
+    max-width: 800px;
+    margin: $spacing-large auto;
+    padding: $spacing-large;
+    background: white;
+    border: 1px solid $secondary-color;
+    border-radius: $border-radius;
+
+    .form-group {
+        margin-bottom: $spacing-medium;
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: $spacing-small;
+            color: $text-color;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: $spacing-small;
+            font-size: $font-size-base;
+            border: 1px solid $secondary-color;
+            border-radius: $border-radius;
+            background: white;
+            color: $text-color;
+
+            &:focus {
+                border-color: $primary-color;
+                outline: none;
+                box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+            }
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        select[multiple] {
+            height: 150px;
+            padding: $spacing-small;
+        }
+
+        .description {
+            font-size: $font-size-small;
+            color: lighten($text-color, 20%);
+            margin-top: $spacing-small;
+        }
+    }
+}

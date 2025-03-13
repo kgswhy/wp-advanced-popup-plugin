@@ -1,0 +1,15 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Build artifacts
+dist/
+build/
+
+# Editor dan sistem operasi
+.vscode/
+.DS_Store
+
+# Composer dependencies
+vendor/
+composer.lock

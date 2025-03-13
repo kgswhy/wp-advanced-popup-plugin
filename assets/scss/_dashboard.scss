@@ -1,0 +1,57 @@
+.dashboard-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    h1, h2 {
+        color: #333;
+    }
+}
+
+.popup-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background: #f4f4f4;
+    }
+
+    .status-active {
+        color: green;
+        font-weight: bold;
+    }
+
+    .status-inactive {
+        color: red;
+        font-weight: bold;
+    }
+
+    .edit-button {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .delete-button {
+        background: red;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+}

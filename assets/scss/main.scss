@@ -1,0 +1,172 @@
+@use 'dashboard';
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+
+// Variables
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$success-color: #27ae60;
+$error-color: #e74c3c;
+$border-radius: 8px;
+$box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+
+.popup-form-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  .form-card {
+    background: white;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    
+    .card-header {
+      padding: 1.5rem;
+      background: $primary-color;
+      
+      .card-title {
+        color: white;
+        margin: 0;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .form-content {
+    padding: 2rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: darken($primary-color, 10%);
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        outline: none;
+        border-color: $secondary-color;
+        box-shadow: 0 0 0 2px rgba($secondary-color, 0.2);
+      }
+    }
+
+    .form-textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .react-select-container {
+      .react-select__control {
+        min-height: 42px;
+        border-color: #ddd;
+        
+        &:hover {
+          border-color: #ccc;
+        }
+        
+        &--is-focused {
+          border-color: $secondary-color;
+          box-shadow: 0 0 0 2px rgba($secondary-color, 0.2);
+        }
+      }
+      
+      .react-select__multi-value {
+        background: rgba($secondary-color, 0.1);
+        border-radius: 4px;
+        
+        &__label {
+          color: darken($secondary-color, 15%);
+        }
+      }
+    }
+
+    .form-hint {
+      margin-top: 0.5rem;
+      font-size: 0.875rem;
+      color: #666;
+    }
+  }
+
+  .alert {
+    padding: 1rem;
+    margin: 1.5rem;
+    border-radius: 4px;
+    
+    &.error {
+      background: rgba($error-color, 0.1);
+      color: darken($error-color, 10%);
+      border: 1px solid rgba($error-color, 0.2);
+    }
+    
+    &.success {
+      background: rgba($success-color, 0.1);
+      color: darken($success-color, 10%);
+      border: 1px solid rgba($success-color, 0.2);
+    }
+  }
+
+  .form-actions {
+    margin-top: 2rem;
+    text-align: right;
+    
+    .submit-button {
+      background: $secondary-color;
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      
+      &:hover {
+        background: darken($secondary-color, 10%);
+      }
+      
+      &:disabled {
+        background: #bdc3c7;
+        cursor: not-allowed;
+      }
+      
+      .loading-dots {
+        &::after {
+          content: '.';
+          animation: dots 1.5s infinite;
+        }
+      }
+    }
+  }
+}
+
+@keyframes dots {
+  0%, 20% {
+    content: '.';
+  }
+  40% {
+    content: '..';
+  }
+  60% {
+    content: '...';
+  }
+  80%, 100% {
+    content: '';
+  }
+}
